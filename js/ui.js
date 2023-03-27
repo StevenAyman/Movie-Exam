@@ -58,10 +58,10 @@ export function displayAllMovies(movies) {
   let moviesHtml = '';
   for (const movie of movies) {
     let movi = new Movie(
-      movie.title,
+      movie.title || movie.name,
       movie.overview,
       movie.vote_average,
-      movie.release_date,
+      movie.release_date || movie.first_air_date,
       movie.poster_path
     );
 
