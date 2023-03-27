@@ -76,7 +76,7 @@ export function displayAllMovies(movies) {
           <p class="desc text-center">
             ${movi.desc}
           </p>
-          <p class="text-center">rate: <span> ${movi.vote} </span></p>
+          <p class="text-center">rate: <span> ${movi.vote.toFixed(1)} </span></p>
           <p class="date text-center"> ${movi.releaseDate} </p>
         </figcaption>
       </figure>
